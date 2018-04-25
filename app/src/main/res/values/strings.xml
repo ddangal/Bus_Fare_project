@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Bus_fare_project</string>
+    <string-array name="name_spin">
+        <item>Deependra</item>
+        <item>Pawan</item>
+        <item>Sunit</item>
+    </string-array>
+</resources>

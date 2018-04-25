@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/bsfare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bus Fare"
+        android:textSize="50sp"
+        android:textColor="#33a000"
+        android:layout_gravity="center"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:src="@drawable/sajha_bus"
+        android:id="@+id/sajha_bus"
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        >
+        <AutoCompleteTextView
+            android:id="@+id/cur_place"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:hint="Source"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            />
+        <!--<Spinner
+            android:id="@+id/spn_from"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        >
+        <AutoCompleteTextView
+            android:id="@+id/destination"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:hint="destination"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            />
+        <!--<Spinner
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/spn_to"
+            android:layout_weight="1"
+            />-->
+
+    </LinearLayout>
+    <RadioGroup
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radio_group">
+
+        <RadioButton
+            android:layout_marginRight="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Normal"
+            android:id="@+id/button_normal"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Student"
+            android:id="@+id/button_student"/>
+    </RadioGroup>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Display"
+        android:textColor="#aa33ff"
+        android:textSize="20sp"
+        android:id="@+id/btnready"
+        />
+
+</LinearLayout>
+
